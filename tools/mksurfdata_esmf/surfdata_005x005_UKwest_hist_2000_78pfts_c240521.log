@@ -1,0 +1,1016 @@
+Attempting to create surface boundary data .....
+------------------------------------------------------------
+Grid_name:                   Cols0061226
+Input rawdata files and corresponding meshes
+ PFTs from:                  /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/pftcftdynharv.0.25x0.25.LUH2.histsimyr1850-2015.c20230226/mksrf_landuse_ctsm52_histLUH2_2000.c20230226.nc
+ mesh for pft                /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_0.25x0.25_nomask_cdf5_c200129.nc
+
+ percent lake from:          /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/lake_area/mksurf_lake_0.05x0.05_hist_clm5_hydrolakes_2000.cdf5.c20220325.nc
+ mesh for percent lake       /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_3x3min_nomask_cdf5_c200129.nc
+ lake depth from:            /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_LakePnDepth_3x3min_simyr2017_MODISgrid.cdf5.c200305.nc
+ mesh for lake depth         /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_3x3min_nomask_cdf5_c200129.nc
+
+ inland wetland from:        /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_lanwat.050425.nc
+ mesh for wetland            /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_0.5x0.5_nomask_cdf5_c200129.nc
+
+ soil texture mapunits from: /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_soil_mapunits_5x5min_WISE.c220330.nc
+ soil texture (sand/clay, orgc) lookup: /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_soil_lookup.10level.WISE.c220330.nc
+ mesh for soil texture       /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_5x5min_nomask_cdf5_c200129.nc
+
+ soil color from:            /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/pftcftdynharv.0.25x0.25.LUH2.histsimyr1850-2015.c20230226/mksrf_soilcolor_ctsm52_histLUH2_2005.c20230226.nc
+ mesh for soil color         /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_0.25x0.25_nomask_cdf5_c200129.nc
+
+ fmax from:                  /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_fmax_0.125x0.125_c200220.nc
+ mesh for fmax               /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_0.125x0.125_nomask_cdf5_c200129.nc
+
+ soil depth from:            /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksf_soilthk_5x5min_ORNL-Soil_simyr1900-2015_c170630.nc
+ mesh for soil depth         /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_5x5min_nomask_cdf5_c200129.nc
+
+ VOC emission factors from:  /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_vocef_0.5x0.5_simyr2000.c110531.nc
+ mesh for VOC pct emis       /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_0.5x0.5_nomask_cdf5_c200129.nc
+
+ gdp from:                   /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_gdp_0.5x0.5_AVHRR_simyr2000.c130228.nc
+ mesh for gdp                /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_0.5x0.5_nomask_cdf5_c200129.nc
+
+ peat from:                  /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_peatf_0.5x0.5_AVHRR_simyr2000.c130228.nc
+ mesh for peatlands          /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_0.5x0.5_nomask_cdf5_c200129.nc
+
+ harvest from:               /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/pftcftdynharv.0.25x0.25.LUH2.histsimyr1850-2015.c20230226/mksrf_landuse_ctsm52_histLUH2_2000.c20230226.nc
+ mesh for harvest            /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_0.25x0.25_nomask_cdf5_c200129.nc
+
+ topography statistics from: /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_topostats_1km-merge-10min_HYDRO1K-merge-nomask_simyr2000.c130402.nc
+ mesh for topography stats   /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UGRID_1km-merge-10min_HYDRO1K-merge-nomask_cdf5_c130402.nc
+
+ glaciers from:              /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_glacier_3x3min_simyr2000.c20210708.nc
+            with:              10 glacier elevation classes
+ mesh for glacier            /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_3x3min_nomask_cdf5_c200129.nc
+ glacier region ID from:     /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_GlacierRegion_10x10min_nomask_cd5_c220131.nc
+ mesh for glacier region     /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_10x10min_nomask_cdf5_c200129.nc
+
+ urban from:                 /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/gao_oneill_urban/historical/urban_properties_GaoOneil_05deg_ThreeClass_2000_cdf5_c20220910.nc
+ mesh for urban              /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_3x3min_nomask_cdf5_c200129.nc
+
+ urban topography from:      /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_topo.10min.cdf5.c220201.nc
+ mesh for urban topography   /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_10x10min_nomask_cdf5_c200129.nc
+
+ mesh for lai/sai            /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_0.25x0.25_nomask_cdf5_c200129.nc
+ mesh for ag fire pk month   /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_0.5x0.5_nomask_cdf5_c200129.nc
+
+ abm from:                   /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_abm_0.5x0.5_AVHRR_simyr2000.c130201.nc
+
+ VIC parameters from:        
+ mesh for VIC parameters     
+
+
+ ================================================================================
+Model grid configuration variables
+ mksrf_fgrid_mesh = /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/output_analysis/project4/make_surface/lnd_mesh_UKwest.nc
+ nlon=      253
+ nlat=      242
+Grid_size:                   61226
+
+ ================================================================================
+
+Output configuration variables
+ output file is 2d lat/lon format
+ Output ALL data in file as 64-bit
+ Only output ESMF PET files if fatal errors happen in ESMF
+ npes =   128 grid size = 61226
+  Opening file and reading pio_iotype from txt file with the same name
+ (mkpftInit)  num_natpft =       14
+ (mkpftInit)  natpft_lb  =        0
+ (mkpftInit)  natpft_ub  =       14
+ (mkpftInit)  num_cft    =       64
+ (mkpftInit)  cft_lb     =       15
+ (mkpftInit)  cft_ub     =       78
+Creating surface datasets with extra types for crops; total pfts =      78
+
+ ================================================================================
+opening output file surfdata_005x005_UKwest_hist_2000_78pfts_c240521.nc
+(mkpio_wopen) creating file surfdata_005x005_UKwest_hist_2000_78pfts_c240521.nc
+
+ ================================================================================
+
+Attempting to create model lats and lons from model mesh .....
+Successfully made model lats and lons
+mksrfdata writing out model grid
+mksrfdata writing out LONGXY
+mksrfdata writing out LATIXY
+  Initialization is complete, going on to process types of input files
+
+Attempting to make LAIs/SAIs/heights .....
+ Input file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/pftcftdynharv.0.25x0.25.LUH2.histsimyr1850-2015.c20230226/mksrf_pftlaihgt_ctsm52_histLUH2_2005.c20230226.nc
+ Input mesh file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_0.25x0.25_nomask_cdf5_c200129.nc
+ WARNING: mklai(): parameter numpft+1 =           79 does not equal input dataset numpft =           16
+ This inconsistency used to stop the program. Now we allow it 
+ because crop pfts 17-last are assumed to never use satellite lai data.
+
+ LAI Output for month            1
+ ......................................................................
+ PFT input grid area output grid area
+         10**6 km**2      10**6 km**2
+ ......................................................................
+
+   0           0.000            0.000
+   1           2.486            0.007
+   2           1.766            0.005
+   3           0.332            0.000
+   4           4.737            0.018
+   5           3.807            0.014
+   6           1.676            0.004
+   7           1.217            0.003
+   8           0.898            0.000
+   9           0.462            0.002
+  10           0.474            0.002
+  11           0.183            0.001
+  12           0.356            0.001
+  13           0.797            0.005
+  14           0.933            0.002
+  15           1.499            0.006
+ Successfully made LAIs/SAIs/heights for month            1
+
+ LAI Output for month            2
+ ......................................................................
+ PFT input grid area output grid area
+         10**6 km**2      10**6 km**2
+ ......................................................................
+
+   0           0.000            0.000
+   1           2.392            0.006
+   2           1.626            0.004
+   3           0.305            0.000
+   4           4.727            0.018
+   5           3.911            0.014
+   6           1.695            0.004
+   7           1.268            0.002
+   8           0.911            0.000
+   9           0.484            0.002
+  10           0.521            0.001
+  11           0.188            0.001
+  12           0.372            0.001
+  13           0.813            0.004
+  14           0.962            0.002
+  15           1.554            0.005
+ Successfully made LAIs/SAIs/heights for month            2
+
+ LAI Output for month            3
+ ......................................................................
+ PFT input grid area output grid area
+         10**6 km**2      10**6 km**2
+ ......................................................................
+
+   0           0.000            0.000
+   1           2.357            0.006
+   2           1.441            0.004
+   3           0.241            0.000
+   4           4.778            0.020
+   5           3.986            0.015
+   6           1.815            0.005
+   7           1.252            0.003
+   8           0.714            0.000
+   9           0.607            0.002
+  10           0.587            0.002
+  11           0.177            0.001
+  12           0.341            0.001
+  13           0.865            0.005
+  14           1.043            0.002
+  15           1.646            0.005
+ Successfully made LAIs/SAIs/heights for month            3
+
+ LAI Output for month            4
+ ......................................................................
+ PFT input grid area output grid area
+         10**6 km**2      10**6 km**2
+ ......................................................................
+
+   0           0.000            0.000
+   1           2.479            0.009
+   2           1.368            0.004
+   3           0.228            0.000
+   4           4.879            0.020
+   5           4.179            0.017
+   6           2.024            0.006
+   7           1.473            0.006
+   8           0.187            0.000
+   9           0.741            0.003
+  10           0.652            0.002
+  11           0.163            0.002
+  12           0.315            0.001
+  13           0.972            0.006
+  14           1.180            0.003
+  15           1.818            0.009
+ Successfully made LAIs/SAIs/heights for month            4
+
+ LAI Output for month            5
+ ......................................................................
+ PFT input grid area output grid area
+         10**6 km**2      10**6 km**2
+ ......................................................................
+
+   0           0.000            0.000
+   1           3.008            0.012
+   2           1.672            0.006
+   3           0.990            0.003
+   4           4.841            0.021
+   5           4.206            0.017
+   6           2.307            0.008
+   7           2.315            0.012
+   8           0.829            0.005
+   9           0.768            0.003
+  10           0.740            0.003
+  11           0.369            0.002
+  12           0.471            0.002
+  13           1.194            0.008
+  14           1.330            0.004
+  15           2.116            0.013
+ Successfully made LAIs/SAIs/heights for month            5
+
+ LAI Output for month            6
+ ......................................................................
+ PFT input grid area output grid area
+         10**6 km**2      10**6 km**2
+ ......................................................................
+
+   0           0.000            0.000
+   1           3.712            0.014
+   2           2.833            0.009
+   3           2.242            0.005
+   4           4.781            0.021
+   5           4.054            0.017
+   6           2.565            0.011
+   7           2.863            0.014
+   8           2.466            0.009
+   9           0.633            0.002
+  10           0.887            0.004
+  11           0.945            0.004
+  12           0.962            0.004
+  13           1.506            0.009
+  14           1.415            0.004
+  15           2.552            0.014
+ Successfully made LAIs/SAIs/heights for month            6
+
+ LAI Output for month            7
+ ......................................................................
+ PFT input grid area output grid area
+         10**6 km**2      10**6 km**2
+ ......................................................................
+
+   0           0.000            0.000
+   1           3.847            0.014
+   2           3.400            0.011
+   3           2.776            0.006
+   4           4.888            0.021
+   5           4.156            0.016
+   6           2.835            0.012
+   7           2.898            0.012
+   8           3.025            0.011
+   9           0.537            0.002
+  10           0.982            0.004
+  11           1.393            0.006
+  12           1.360            0.005
+  13           1.636            0.008
+  14           1.522            0.004
+  15           2.814            0.012
+ Successfully made LAIs/SAIs/heights for month            7
+
+ LAI Output for month            8
+ ......................................................................
+ PFT input grid area output grid area
+         10**6 km**2      10**6 km**2
+ ......................................................................
+
+   0           0.000            0.000
+   1           3.638            0.013
+   2           3.066            0.010
+   3           2.286            0.005
+   4           5.089            0.021
+   5           4.273            0.016
+   6           2.974            0.012
+   7           2.769            0.011
+   8           2.374            0.010
+   9           0.504            0.001
+  10           0.916            0.004
+  11           1.095            0.005
+  12           1.056            0.005
+  13           1.452            0.007
+  14           1.531            0.004
+  15           2.587            0.010
+ Successfully made LAIs/SAIs/heights for month            8
+
+ LAI Output for month            9
+ ......................................................................
+ PFT input grid area output grid area
+         10**6 km**2      10**6 km**2
+ ......................................................................
+
+   0           0.000            0.000
+   1           3.305            0.011
+   2           2.644            0.009
+   3           0.540            0.003
+   4           5.220            0.021
+   5           4.253            0.014
+   6           3.087            0.013
+   7           2.234            0.009
+   8           0.555            0.006
+   9           0.462            0.001
+  10           0.687            0.003
+  11           0.521            0.003
+  12           0.531            0.003
+  13           1.103            0.006
+  14           1.364            0.003
+  15           2.050            0.009
+ Successfully made LAIs/SAIs/heights for month            9
+
+ LAI Output for month           10
+ ......................................................................
+ PFT input grid area output grid area
+         10**6 km**2      10**6 km**2
+ ......................................................................
+
+   0           0.000            0.000
+   1           3.017            0.010
+   2           2.345            0.007
+   3           0.166            0.000
+   4           5.155            0.019
+   5           4.140            0.013
+   6           2.909            0.012
+   7           1.491            0.008
+   8           0.064            0.002
+   9           0.430            0.001
+  10           0.541            0.002
+  11           0.312            0.003
+  12           0.355            0.002
+  13           0.923            0.005
+  14           1.159            0.002
+  15           1.710            0.008
+ Successfully made LAIs/SAIs/heights for month           10
+
+ LAI Output for month           11
+ ......................................................................
+ PFT input grid area output grid area
+         10**6 km**2      10**6 km**2
+ ......................................................................
+
+   0           0.000            0.000
+   1           2.797            0.009
+   2           2.112            0.007
+   3           0.276            0.000
+   4           5.050            0.018
+   5           3.994            0.013
+   6           2.442            0.009
+   7           1.181            0.005
+   8           0.308            0.000
+   9           0.480            0.001
+  10           0.478            0.003
+  11           0.195            0.002
+  12           0.284            0.002
+  13           0.855            0.006
+  14           1.046            0.002
+  15           1.569            0.008
+ Successfully made LAIs/SAIs/heights for month           11
+
+ LAI Output for month           12
+ ......................................................................
+ PFT input grid area output grid area
+         10**6 km**2      10**6 km**2
+ ......................................................................
+
+   0           0.000            0.000
+   1           2.642            0.008
+   2           1.918            0.005
+   3           0.332            0.000
+   4           4.840            0.017
+   5           3.849            0.014
+   6           1.907            0.006
+   7           1.181            0.004
+   8           0.363            0.000
+   9           0.512            0.002
+  10           0.456            0.002
+  11           0.173            0.001
+  12           0.305            0.001
+  13           0.810            0.005
+  14           0.971            0.002
+  15           1.498            0.006
+ Successfully made LAIs/SAIs/heights for month           12
+
+ ================================================================================
+
+Attempting to make PFTs .....
+ Input file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/pftcftdynharv.0.25x0.25.LUH2.histsimyr1850-2015.c20230226/mksrf_landuse_ctsm52_histLUH2_2000.c20230226.nc
+ Input mesh file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_0.25x0.25_nomask_cdf5_c200129.nc
+   dimid, length=        1    1440
+   dimid, length=        2     720
+   dimid, length=        3      64
+   num_cft =       64
+
+ ......................................................................
+ PFTs Output
+ plant type                          output grid area
+                                        10**6 km**2
+ ......................................................................
+
+ not vegetated                                  0.001
+ needleleaf evergreen temperate tree            0.017
+ needleleaf evergreen boreal tree               0.007
+ needleleaf deciduous boreal tree               0.000
+ broadleaf evergreen tropical tree              0.000
+ broadleaf evergreen temperate tree             0.000
+ broadleaf deciduous tropical tree              0.000
+ broadleaf deciduous temperate tree             0.017
+ broadleaf deciduous boreal tree                0.004
+ broadleaf evergreen shrub                      0.000
+ broadleaf deciduous temperate shrub            0.000
+ broadleaf deciduous boreal shrub               0.002
+ c3 arctic grass                                0.004
+ c3 non-arctic grass                            0.188
+ c4 grass                                       0.000
+ c3_crop                                        0.000
+ c3_irrigated                                   0.000
+ temperate_corn                                 0.000
+ irrigated_temperate_corn                       0.000
+ spring_wheat                                   0.019
+ irrigated_spring_wheat                         0.000
+ winter_wheat                                   0.000
+ irrigated_winter_wheat                         0.000
+ temperate_soybean                              0.000
+ irrigated_temperate_soybean                    0.000
+ barley                                         0.011
+ irrigated_barley                               0.000
+ winter_barley                                  0.000
+ irrigated_winter_barley                        0.000
+ rye                                            0.000
+ irrigated_rye                                  0.000
+ winter_rye                                     0.000
+ irrigated_winter_rye                           0.000
+ cassava                                        0.000
+ irrigated_cassava                              0.000
+ citrus                                         0.000
+ irrigated citrus                               0.000
+ cocoa                                          0.000
+ irrigated_cocoa                                0.000
+ coffee                                         0.000
+ irrigated_coffee                               0.000
+ cotton                                         0.000
+ irrigated_cotton                               0.000
+ datepalm                                       0.000
+ irrigated_datepalm                             0.000
+ foddergrass                                    0.019
+ irrigated_foddergrass                          0.000
+ grapes                                         0.000
+ irrigated_grapes                               0.000
+ groundnuts                                     0.000
+ irrigated_groundnuts                           0.000
+ millet                                         0.000
+ irrigated_millet                               0.000
+ oilpalm                                        0.000
+ irrigated_oilpalm                              0.000
+ potatoes                                       0.002
+ irrigated_potatoes                             0.000
+ pulses                                         0.002
+ irrigated_pulses                               0.000
+ rapeseed                                       0.004
+ irrigated_rapeseed                             0.000
+ rice                                           0.000
+ irrigated_rice                                 0.000
+ sorghum                                        0.000
+ irrigated_sorghum                              0.000
+ sugarbeet                                      0.001
+ irrigated_sugarbeet                            0.000
+ sugarcane                                      0.000
+ irrigated_sugarcane                            0.000
+ sunflower                                      0.000
+ irrigated_sunflower                            0.000
+ miscanthus                                     0.000
+ irrigated_miscanthus                           0.000
+ switchgrass                                    0.000
+ irrigated_switchgrass                          0.000
+ tropical_corn                                  0.000
+ irrigated_tropical_corn                        0.000
+ tropical_soybean                               0.000
+ irrigated_tropical_soybean                     0.000
+Successfully made PFTs
+
+mksrfdata writing land fraction  from pft dataset
+
+ ================================================================================
+
+Attempting to make harvest fields .....
+ Input file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/pftcftdynharv.0.25x0.25.LUH2.histsimyr1850-2015.c20230226/mksrf_landuse_ctsm52_histLUH2_2000.c20230226.nc
+ Input mesh file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_0.25x0.25_nomask_cdf5_c200129.nc
+ reading: HARVEST_VH1
+mkharvest writing out 1d CONST_HARVEST_VH1
+
+
+ ......................................................................
+ diagnostics for CONST_HARVEST_VH1
+ surface type   input grid area  output grid area
+                  10**6 km**2      10**6 km**2   
+ ......................................................................
+
+ CONST_HARVES        17.605            0.000
+  all surface       510.100            1.088
+ reading: HARVEST_VH2
+mkharvest writing out 1d CONST_HARVEST_VH2
+
+
+ ......................................................................
+ diagnostics for CONST_HARVEST_VH2
+ surface type   input grid area  output grid area
+                  10**6 km**2      10**6 km**2   
+ ......................................................................
+
+ CONST_HARVES         7.348            0.000
+  all surface       510.100            1.088
+ reading: HARVEST_SH1
+mkharvest writing out 1d CONST_HARVEST_SH1
+
+
+ ......................................................................
+ diagnostics for CONST_HARVEST_SH1
+ surface type   input grid area  output grid area
+                  10**6 km**2      10**6 km**2   
+ ......................................................................
+
+ CONST_HARVES         9.319            0.315
+  all surface       510.100            1.088
+ reading: HARVEST_SH2
+mkharvest writing out 1d CONST_HARVEST_SH2
+
+
+ ......................................................................
+ diagnostics for CONST_HARVEST_SH2
+ surface type   input grid area  output grid area
+                  10**6 km**2      10**6 km**2   
+ ......................................................................
+
+ CONST_HARVES        13.619            0.116
+  all surface       510.100            1.088
+ reading: HARVEST_SH3
+mkharvest writing out 1d CONST_HARVEST_SH3
+
+
+ ......................................................................
+ diagnostics for CONST_HARVEST_SH3
+ surface type   input grid area  output grid area
+                  10**6 km**2      10**6 km**2   
+ ......................................................................
+
+ CONST_HARVES        20.124            0.000
+  all surface       510.100            1.088
+ reading: GRAZING
+mkharvest writing out 1d CONST_GRAZING
+
+
+ ......................................................................
+ diagnostics for CONST_GRAZING
+ surface type   input grid area  output grid area
+                  10**6 km**2      10**6 km**2   
+ ......................................................................
+
+ CONST_GRAZIN    -15678.115          -41.431
+  all surface       510.100            1.088
+ reading: FERTNITRO_CFT
+mkharvest writing out 2d CONST_FERTNITRO_CFT
+ reading: UNREPRESENTED_PFT_LULCC
+mkharvest writing out 2d UNREPRESENTED_PFT_LULCC
+ reading: UNREPRESENTED_CFT_LULCC
+mkharvest writing out 2d UNREPRESENTED_CFT_LULCC
+Successfully made harvest and grazing
+
+ ================================================================================
+
+Attempting to make %lake
+ Input file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/lake_area/mksurf_lake_0.05x0.05_hist_clm5_hydrolakes_2000.cdf5.c20220325.nc
+ Input mesh file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_3x3min_nomask_cdf5_c200129.nc
+ Attempting to make %lake .....
+
+
+ ......................................................................
+ diagnostics for pct lake
+ surface type   input grid area  output grid area
+                  10**6 km**2      10**6 km**2   
+ ......................................................................
+
+     pct lake         2.916            0.003
+  all surface       510.100            1.088
+ Successfully made %lake
+
+ ================================================================================
+
+Attempting to make lake depth
+ Input file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_LakePnDepth_3x3min_simyr2017_MODISgrid.cdf5.c200305.nc
+ Input mesh file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_3x3min_nomask_cdf5_c200129.nc
+ Attempting to make lake depth .....
+ mklakdep writing out lakedepth
+
+ ......................................................................
+ output diagnostics for lake depth with units = m
+  global input sum=            11.048 global output sum           10.007
+ ......................................................................
+
+ Successfully made lake depth
+ Attempting to make %wetland .....
+ mkwetlnd setting PCT_WETLAND to zero
+
+ ================================================================================
+
+Attempting to make %glacier .....
+ Input file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_glacier_3x3min_simyr2000.c20210708.nc
+ Input mesh file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_3x3min_nomask_cdf5_c200129.nc
+
+
+ ......................................................................
+ diagnostics for pct glacier
+ surface type   input grid area  output grid area
+                  10**6 km**2      10**6 km**2   
+ ......................................................................
+
+  pct glacier        15.991            0.000
+  all surface       510.100            1.088
+Successfully made %glacier
+
+ ================================================================================
+
+Attempting to make glacier region .....
+ Input file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_GlacierRegion_10x10min_nomask_cd5_c220131.nc
+ Input mesh file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_10x10min_nomask_cdf5_c200129.nc
+mkglacierregion writing out glacier_region
+
+ ............................................................
+ index      input grid area  output grid area
+                10**6 km**2       10**6 km**2
+ ............................................................
+         0            0.000             0.000
+         1            1.904             0.000
+         2            2.329             0.000
+         3           34.170             0.000
+Successfully made glacier region
+
+ ================================================================================
+
+Attempting to make %sand, %clay, orgc, cfrag, bulk, phaq .....
+ Input mapunit file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_soil_mapunits_5x5min_WISE.c220330.nc
+ Input lookup table file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_soil_lookup.10level.WISE.c220330.nc
+ Input mesh/grid file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_5x5min_nomask_cdf5_c200129.nc
+ reading mesh_i directly in mksoiltex
+ Reading in mapunit data in mksoiltex
+ Setting mask in mesh where mapunit data is 0 mksoiltex
+  before route handle creation mksoiltex
+  after route handle creation mksoiltex
+  before call to dynamic mask set creation mksoiltex
+  after call to dynamic mask set creation mksoiltex
+mksoiltex writing out mapunits 
+WARNING: assigning       sand_o = -4 to 99%
+WARNING: assigning other sand_o <  0 to 43%
+WARNING: assigning       clay_o = -4 to 1%
+WARNING: assigning other clay_o <  0 to 18%
+WARNING: assigning       orgc_o = -4 to 1
+WARNING: assigning other orgc_o <  0 to 0
+WARNING: same warnings for cfrag_o as for orgc_o
+WARNING: assigning bulk_o < 0 to 1.5
+WARNING: assigning phaq_o < 0 to 7
+mksoiltex writing out soil percent sand
+mksoiltex writing out soil percent clay
+mksoiltex writing out soil organic matter
+mksoiltex writing out soil organic carbon content
+mksoiltex writing out coarse fragments in soil
+mksoiltex writing out soil bulk density
+mksoiltex writing out soil pH measured in H2O
+Successfully made %sand, %clay, orgc, cfrag, bulk, phaq .....
+
+ ================================================================================
+
+Attempting to make soil color classes .....
+ Input file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/pftcftdynharv.0.25x0.25.LUH2.histsimyr1850-2015.c20230226/mksrf_soilcolor_ctsm52_histLUH2_2005.c20230226.nc
+ Input mesh file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_0.25x0.25_nomask_cdf5_c200129.nc
+mksoilcol writing out soil color
+mksoilcol writing out mksoil_color
+
+ ............................................................
+ index      input grid area  output grid area
+                10**6 km**2       10**6 km**2
+ ............................................................
+         0            0.000             0.000
+         1            1.826             0.001
+         2            1.647             0.000
+         3            1.674             0.000
+         4            1.766             0.003
+         5            1.707             0.001
+         6            1.571             0.003
+         7            1.587             0.005
+         8            1.916             0.011
+         9            2.404             0.019
+        10           20.101             0.022
+        11            4.652             0.044
+        12            7.168             0.115
+        13           10.450             0.087
+        14           14.405             0.045
+        15           20.822             0.687
+        16           23.782             0.015
+        17           13.615             0.009
+        18            9.997             0.008
+        19            9.341             0.010
+        20            6.368             0.002
+Successfully made soil color classes
+
+
+ ================================================================================
+
+Attempting to make %fmax .....
+ Input file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_fmax_0.125x0.125_c200220.nc
+ Input mesh file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_0.125x0.125_nomask_cdf5_c200129.nc
+
+
+ ......................................................................
+ diagnostics for Max Fractional Sataturated Area
+ surface type   input grid area  output grid area
+                  10**6 km**2      10**6 km**2   
+ ......................................................................
+
+ Max Fraction         0.629            0.002
+  all surface       510.100            1.088
+mksoilfmax writing out soil fmax (maximum fraction saturated area)
+Successfully made %fmax
+
+ ================================================================================
+
+Attempting to make GDP.....
+ Input file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_gdp_0.5x0.5_AVHRR_simyr2000.c130228.nc
+ Input mesh file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_0.5x0.5_nomask_cdf5_c200129.nc
+mkgdp writing out gdp
+
+ ......................................................................
+ output diagnostics for GDP with units = x1000 US$ per capita
+  global input sum=             7.679 global output sum           23.968
+ ......................................................................
+
+Successfully made GDP
+
+ ================================================================================
+
+Attempting to make peat .....
+ Input file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_peatf_0.5x0.5_AVHRR_simyr2000.c130228.nc
+ Input mesh file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_0.5x0.5_nomask_cdf5_c200129.nc
+mkpeat writing out peatland fraction
+
+
+ ......................................................................
+ diagnostics for Peat
+ surface type   input grid area  output grid area
+                  10**6 km**2      10**6 km**2   
+ ......................................................................
+
+         Peat         2.157            0.011
+  all surface       510.100            1.088
+Successfully made peat
+Attempting to make soildepth .....
+mksoildepth writing out soil depth
+
+
+ ......................................................................
+ diagnostics for Soildepth
+ surface type   input grid area  output grid area
+                  10**6 km**2      10**6 km**2   
+ ......................................................................
+
+    Soildepth      2048.572            2.456
+  all surface       510.100            1.088
+Successfully made soildepth
+
+
+ ================================================================================
+
+Attempting to make agricultural fire peak month data .....
+ Input file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_abm_0.5x0.5_AVHRR_simyr2000.c130201.nc
+ Input mesh file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_0.5x0.5_nomask_cdf5_c200129.nc
+mkagfirepkmon writing abm (agricultural fire peak month)
+
+ ............................................................
+ index      input grid area  output grid area
+                10**6 km**2       10**6 km**2
+ ............................................................
+         1            2.516             0.000
+         2            2.653             0.002
+         3            3.780             0.009
+         4            5.981             0.041
+         5            4.796             0.012
+         6            2.794             0.004
+         7            4.168             0.002
+         8            6.095             0.008
+         9            5.286             0.006
+        10            4.286             0.004
+        11            2.686             0.002
+        12            2.669             0.000
+        13          115.921             0.998
+Successfully made Agricultural fire peak month
+
+
+ ================================================================================
+
+Attempting to make %urban .....
+ Input file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/gao_oneill_urban/historical/urban_properties_GaoOneil_05deg_ThreeClass_2000_cdf5_c20220910.nc
+Successfully made %urban
+
+ ================================================================================
+
+Attempting to make urban region .....
+ Input file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/gao_oneill_urban/historical/urban_properties_GaoOneil_05deg_ThreeClass_2000_cdf5_c20220910.nc
+ max urban regions =       33
+Successfully made urban region
+
+
+ ............................................................
+ index      input grid area  output grid area
+                10**6 km**2       10**6 km**2
+ ............................................................
+         1            1.582             0.000
+         2            7.809             0.000
+         3            8.559             0.000
+         4            6.609             0.000
+         5            5.680             0.000
+         6           10.158             0.000
+         7            0.295             0.000
+         8            9.436             0.000
+         9            5.824             0.000
+        10            0.712             0.000
+        11            2.181             0.000
+        12            2.251             0.000
+        13            3.194             0.000
+        14            2.548             0.000
+        15            6.032             0.000
+        16            9.509             0.000
+        17            1.240             0.000
+        18            0.842             0.000
+        19            1.774             0.324
+        20            1.281             0.000
+        21            1.025             0.000
+        22           17.019             0.000
+        23            3.087             0.000
+        24            1.943             0.000
+        25            1.405             0.000
+        26            1.296             0.000
+        27            4.844             0.000
+        28            1.122             0.000
+        29            1.801             0.000
+        30            4.210             0.000
+        31            5.183             0.000
+        32            5.043             0.000
+        33            1.118             0.010
+mksrfdata writing out urban region id
+
+ ================================================================================
+
+Attempting to make urban topo elevation .....
+ Input file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_topo.10min.cdf5.c220201.nc
+
+ ......................................................................
+ output diagnostics for Urban elev variable with units = m
+  global input sum=           230.498 global output sum           42.999
+ ......................................................................
+
+Successfully made elevation
+
+
+ ================================================================================
+
+Attempting to make Topography statistics.....
+ Input file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_topostats_1km-merge-10min_HYDRO1K-merge-nomask_simyr2000.c130402.nc
+ Input mesh file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UGRID_1km-merge-10min_HYDRO1K-merge-nomask_cdf5_c130402.nc
+mktopostats creating a routehandle 
+mktopostats finished creating a routehandle 
+
+ ......................................................................
+ output diagnostics for Topo Std Dev with units = m
+  global input sum=           802.194 global output sum            8.978
+ ......................................................................
+
+
+ ......................................................................
+ output diagnostics for Slope with units = degrees
+  global input sum=             1.483 global output sum            0.400
+ ......................................................................
+
+mktopostats writing topo_stddev 
+mktopostats writing slope
+Successfully made Topography statistics
+
+
+ ================================================================================
+
+Attempting to make VOC emission factors .....
+ Input data file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_vocef_0.5x0.5_simyr2000.c110531.nc
+ Input mesh file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_0.5x0.5_nomask_cdf5_c200129.nc
+mkvocef writing out voc emission factors
+Successfully made VOC Emission Factors
+ sum over domain of pft            0   9532.1994352396396     
+ sum over domain of pft            1   201364.51089606457     
+ sum over domain of pft            2   46749.754158264688     
+ sum over domain of pft            3   7.6802952408401213     
+ sum over domain of pft            4   0.0000000000000000     
+ sum over domain of pft            5   1.1397633829874549     
+ sum over domain of pft            6   0.0000000000000000     
+ sum over domain of pft            7   164114.62262040115     
+ sum over domain of pft            8   22017.616990526207     
+ sum over domain of pft            9   0.0000000000000000     
+ sum over domain of pft           10   239.73728432987787     
+ sum over domain of pft           11   10240.494464430156     
+ sum over domain of pft           12   23970.609308906369     
+ sum over domain of pft           13   1426316.7440344605     
+ sum over domain of pft           14   0.0000000000000000     
+
+ sum over domain of cft           15   0.0000000000000000     
+ sum over domain of cft           16   0.0000000000000000     
+ sum over domain of cft           17   1075.8895260556130     
+ sum over domain of cft           18   0.0000000000000000     
+ sum over domain of cft           19   107215.27391103853     
+ sum over domain of cft           20   374.55373544978272     
+ sum over domain of cft           21   0.0000000000000000     
+ sum over domain of cft           22   0.0000000000000000     
+ sum over domain of cft           23   0.0000000000000000     
+ sum over domain of cft           24   0.0000000000000000     
+ sum over domain of cft           25   67148.424712358319     
+ sum over domain of cft           26   74.146956428224257     
+ sum over domain of cft           27   0.0000000000000000     
+ sum over domain of cft           28   0.0000000000000000     
+ sum over domain of cft           29   9.1181956565984130     
+ sum over domain of cft           30   0.0000000000000000     
+ sum over domain of cft           31   0.0000000000000000     
+ sum over domain of cft           32   0.0000000000000000     
+ sum over domain of cft           33   0.0000000000000000     
+ sum over domain of cft           34   0.0000000000000000     
+ sum over domain of cft           35   0.0000000000000000     
+ sum over domain of cft           36   0.0000000000000000     
+ sum over domain of cft           37   0.0000000000000000     
+ sum over domain of cft           38   0.0000000000000000     
+ sum over domain of cft           39   0.0000000000000000     
+ sum over domain of cft           40   0.0000000000000000     
+ sum over domain of cft           41   0.0000000000000000     
+ sum over domain of cft           42   0.0000000000000000     
+ sum over domain of cft           43   0.0000000000000000     
+ sum over domain of cft           44   0.0000000000000000     
+ sum over domain of cft           45   115098.98641201266     
+ sum over domain of cft           46   15.322054219846091     
+ sum over domain of cft           47   10.416331314744999     
+ sum over domain of cft           48   0.0000000000000000     
+ sum over domain of cft           49   0.0000000000000000     
+ sum over domain of cft           50   0.0000000000000000     
+ sum over domain of cft           51   0.0000000000000000     
+ sum over domain of cft           52   0.0000000000000000     
+ sum over domain of cft           53   0.0000000000000000     
+ sum over domain of cft           54   0.0000000000000000     
+ sum over domain of cft           55   9038.0679587883351     
+ sum over domain of cft           56   17.812156706830145     
+ sum over domain of cft           57   12198.862263410012     
+ sum over domain of cft           58   23.188869125227562     
+ sum over domain of cft           59   23491.259377710285     
+ sum over domain of cft           60   78.509192089693755     
+ sum over domain of cft           61   0.0000000000000000     
+ sum over domain of cft           62   0.0000000000000000     
+ sum over domain of cft           63   42.349241970118527     
+ sum over domain of cft           64   0.0000000000000000     
+ sum over domain of cft           65   5387.1557466909799     
+ sum over domain of cft           66   30.669780096670966     
+ sum over domain of cft           67   0.0000000000000000     
+ sum over domain of cft           68   0.0000000000000000     
+ sum over domain of cft           69   15.245901500425962     
+ sum over domain of cft           70   0.0000000000000000     
+ sum over domain of cft           71   0.0000000000000000     
+ sum over domain of cft           72   0.0000000000000000     
+ sum over domain of cft           73   0.0000000000000000     
+ sum over domain of cft           74   0.0000000000000000     
+ sum over domain of cft           75   0.0000000000000000     
+ sum over domain of cft           76   0.0000000000000000     
+ sum over domain of cft           77   0.0000000000000000     
+ sum over domain of cft           78   0.0000000000000000     
+
+mksrfdata writing out percnt urban
+Attempting to make Urban Parameters .....
+Opening input urban parameter file: /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/gao_oneill_urban/historical/urban_properties_GaoOneil_05deg_ThreeClass_2000_cdf5_c20220910.nc
+Successfully made Urban Parameters
+
+mksrfdata writing out PCT_URBAN
+mksrfdata writing out PCT_GLACIER
+mksrfdata writing out PCT_LAKE
+mksrfdata writing out PCT_WETLAND
+mksrfdata writing out PCT_OCEAN
+mksrfdata writing PCT_NATVEG
+mksrfdata writing PCT_CROP
+mksrfdata writing PCT_NAT_PFT
+mksrfdata writing PCT_CFT
+mksrfdata writing LANDFRAC_MKSURFDATA
+mkglcmecInit writing out GLC_MEC
+
+ ================================================================================
+
+Attempting to make percent elevation class 
+and mean elevation for glaciers .....
+ Input file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/rawdata/mksrf_glacier_3x3min_simyr2000.c20210708.nc
+ Input mesh file is /mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/inputdata/lnd/clm2/mappingdata/grids/UNSTRUCTgrid_3x3min_nomask_cdf5_c200129.nc
+mkglcmec writing out pct_glc_mec
+mkglcmec writing out topo_glc_mec
+Successfully made percent elevation class and mean elevation for glaciers
+
+Successfully created surface data output file = surfdata_005x005_UKwest_hist_2000_78pfts_c240521.nc
+   This file contains the land model surface data
+
+Successfully ran mksurfdata_esmf
