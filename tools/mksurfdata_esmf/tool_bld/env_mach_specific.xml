@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<file id="env_mach_specific.xml" version="2.0">
+  <header>
+    These variables control the machine dependent environment including
+    the paths to compilers and libraries external to cime such as netcdf,
+    environment variables for use in the running job should also be set	here.
+    </header>
+  <group id="compliant_values">
+    <entry id="run_exe" value="${EXEROOT}/cesm.exe ">
+      <type>char</type>
+      <desc>executable name</desc>
+    </entry>
+    <entry id="run_misc_suffix" value=" &gt;&gt; cesm.log.$LID 2&gt;&amp;1 ">
+      <type>char</type>
+      <desc>redirect for job output</desc>
+    </entry>
+  </group>
+  <module_system allow_error="true" type="module">
+    <init_path lang="perl">/net/scratch2/mbessdl2/bin/modules/init/perl.pm</init_path>
+    <init_path lang="python">/net/scratch2/mbessdl2/bin/modules/init/python.py</init_path>
+    <init_path lang="sh">/net/scratch2/mbessdl2/bin/modules/init/sh</init_path>
+    <init_path lang="csh">/net/scratch2/mbessdl2/bin/modules/init/csh</init_path>
+    <cmd_path lang="perl">/opt/clusterware/opt/modules/bin/modulecmd perl</cmd_path>
+    <cmd_path lang="python">/opt/clusterware/opt/modules/bin/modulecmd python</cmd_path>
+    <cmd_path lang="sh">module</cmd_path>
+    <cmd_path lang="csh">module</cmd_path>
+    <modules compiler="gnu">
+      <command name="load">compilers/gcc/8.2.0</command>
+      <command name="load">mpi/gcc/openmpi/4.1.2-gcc-8.2.0</command>
+      <command name="load">libs/blas/3.6.0/gcc-4.8.5</command>
+      <command name="load">libs/lapack/3.5.0/gcc-4.8.5</command>
+      <command name="load">tools/gcc/cmake/3.25.1</command>
+    </modules>
+    <modules compiler="gnu" mpilib="openmpi">
+      <command name="load">use.own</command>
+      <command name="load">zlib/1.2.12</command>
+      <command name="load">hdf5/1.12.3</command>
+      <command name="load">pnetcdf/1.12.3</command>
+      <command name="load">netcdf/4.9.2</command>
+      <command name="load">netcdf-fortran/4.6.1</command>
+      <command name="load">pio/2.6.2</command>
+      <command name="load">esmf/8.6.0</command>
+    </modules>
+    <modules compiler="gnu" mpilib="mpi-serial">
+      <command name="load">libs/gcc/netcdf/4.9.2</command>
+      <command name="load">apps/gcc/esmf/8.5.0</command>
+      <command name="load">libs/gcc/hdf5/1.14.1</command>
+    </modules>
+  </module_system>
+  <environment_variables mpilib="openmpi">
+    <env name="HDF5_DIR">/mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/hdf5/1.12.3</env>
+    <env name="NetCDF_C_PATH">/mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/netcdf/4.9.2</env>
+    <env name="NetCDF_Fortran_PATH">/mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/netcdf-fortran/4.6.1</env>
+    <env name="PNETCDF_PATH">/mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/pnetcdf/1.12.3</env>
+    <env name="ESMFMKFILE">/mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/8.6/lib/esmf.mk</env>
+    <env name="PIO_VERSION_MAJOR">2</env>
+    <env name="PIO_LIBDIR">/mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/pio2/2.6.2/lib</env>
+    <env name="PIO_INCDIR">/mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/pio2/2.6.2/include</env>
+    <env name="PIO">/mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/pio2/2.6.2</env>
+  </environment_variables>
+  <environment_variables mpilib="mpi-serial">
+    <env name="ESMFMKFILE">/opt/apps/apps/gcc/esmf/8.5.0/lib/esmf.mk</env>
+  </environment_variables>
+  <mpirun mpilib="default">
+    <executable>mpirun</executable>
+    <arguments>
+      <arg name="num_tasks"> -np {{ total_tasks }}</arg>
+    </arguments>
+  </mpirun>
+</file>

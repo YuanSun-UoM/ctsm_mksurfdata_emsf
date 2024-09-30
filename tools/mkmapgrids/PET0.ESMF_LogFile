@@ -1,0 +1,72 @@
+20240521 142709.579 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240521 142709.592 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240521 142709.592 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240521 142709.592 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240521 142709.592 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240521 142709.592 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240521 142709.592 INFO             PET0 Running with ESMF Version   : 8.6.0
+20240521 142709.592 INFO             PET0 ESMF library build date/time: "Mar 30 2024" "18:05:59"
+20240521 142709.592 INFO             PET0 ESMF library build location : /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.0
+20240521 142709.592 INFO             PET0 ESMF_COMM                   : openmpi
+20240521 142709.592 INFO             PET0 ESMF_MOAB                   : enabled
+20240521 142709.592 INFO             PET0 ESMF_LAPACK                 : enabled
+20240521 142709.592 INFO             PET0 ESMF_NETCDF                 : enabled
+20240521 142709.592 INFO             PET0 ESMF_PNETCDF                : enabled
+20240521 142709.592 INFO             PET0 ESMF_PIO                    : enabled
+20240521 142709.592 INFO             PET0 ESMF_YAMLCPP                : enabled
+20240521 142709.606 ERROR            PET0 /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.0/src/Infrastructure/IO/interface/ESMC_IOScrip2ESMF.C:50 handle_error Internal error: Bad condition  - line 484: NetCDF error: No such file or directory
+20240521 142709.606 ERROR            PET0 /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.0/src/Infrastructure/IO/interface/ESMC_IOScrip2ESMF.C:50 handle_error Internal error: Bad condition  - line 501: NetCDF error: NetCDF: Not a valid ID
+20240521 142709.606 ERROR            PET0 /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.0/src/Infrastructure/IO/interface/ESMC_IOScrip2ESMF.C:50 handle_error Internal error: Bad condition  - line 503: NetCDF error: NetCDF: Not a valid ID
+20240521 142709.606 ERROR            PET0 /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.0/src/Infrastructure/IO/interface/ESMC_IOScrip2ESMF.C:50 handle_error Internal error: Bad condition  - line 505: NetCDF error: NetCDF: Not a valid ID
+20240521 142709.606 ERROR            PET0 /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.0/src/Infrastructure/IO/interface/ESMC_IOScrip2ESMF.C:50 handle_error Internal error: Bad condition  - line 509: NetCDF error: NetCDF: Not a valid ID
+20240521 142709.606 ERROR            PET0 /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.0/src/Infrastructure/IO/interface/ESMC_IOScrip2ESMF.C:50 handle_error Internal error: Bad condition  - line 511: NetCDF error: NetCDF: Not a valid ID
+20240521 142709.606 ERROR            PET0 /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.0/src/Infrastructure/IO/interface/ESMC_IOScrip2ESMF.C:50 handle_error Internal error: Bad condition  - line 513: NetCDF error: NetCDF: Not a valid ID
+20240521 142709.606 INFO             PET0  Finalizing ESMF
+20240521 185610.137 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240521 185610.137 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240521 185610.137 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240521 185610.137 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240521 185610.137 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240521 185610.137 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240521 185610.137 INFO             PET0 Running with ESMF Version   : 8.6.0
+20240521 185610.137 INFO             PET0 ESMF library build date/time: "Mar 30 2024" "18:05:59"
+20240521 185610.137 INFO             PET0 ESMF library build location : /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.0
+20240521 185610.137 INFO             PET0 ESMF_COMM                   : openmpi
+20240521 185610.137 INFO             PET0 ESMF_MOAB                   : enabled
+20240521 185610.137 INFO             PET0 ESMF_LAPACK                 : enabled
+20240521 185610.137 INFO             PET0 ESMF_NETCDF                 : enabled
+20240521 185610.137 INFO             PET0 ESMF_PNETCDF                : enabled
+20240521 185610.137 INFO             PET0 ESMF_PIO                    : enabled
+20240521 185610.137 INFO             PET0 ESMF_YAMLCPP                : enabled
+20240521 185610.168 ERROR            PET0 /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.0/src/Infrastructure/IO/interface/ESMC_IOScrip2ESMF.C:50 handle_error Internal error: Bad condition  - line 484: NetCDF error: No such file or directory
+20240521 185610.169 ERROR            PET0 /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.0/src/Infrastructure/IO/interface/ESMC_IOScrip2ESMF.C:50 handle_error Internal error: Bad condition  - line 501: NetCDF error: NetCDF: Not a valid ID
+20240521 185610.169 ERROR            PET0 /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.0/src/Infrastructure/IO/interface/ESMC_IOScrip2ESMF.C:50 handle_error Internal error: Bad condition  - line 503: NetCDF error: NetCDF: Not a valid ID
+20240521 185610.169 ERROR            PET0 /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.0/src/Infrastructure/IO/interface/ESMC_IOScrip2ESMF.C:50 handle_error Internal error: Bad condition  - line 505: NetCDF error: NetCDF: Not a valid ID
+20240521 185610.169 ERROR            PET0 /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.0/src/Infrastructure/IO/interface/ESMC_IOScrip2ESMF.C:50 handle_error Internal error: Bad condition  - line 509: NetCDF error: NetCDF: Not a valid ID
+20240521 185610.169 ERROR            PET0 /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.0/src/Infrastructure/IO/interface/ESMC_IOScrip2ESMF.C:50 handle_error Internal error: Bad condition  - line 511: NetCDF error: NetCDF: Not a valid ID
+20240521 185610.169 ERROR            PET0 /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.0/src/Infrastructure/IO/interface/ESMC_IOScrip2ESMF.C:50 handle_error Internal error: Bad condition  - line 513: NetCDF error: NetCDF: Not a valid ID
+20240521 185610.169 INFO             PET0  Finalizing ESMF
+20240813 172436.312 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240813 172436.312 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240813 172436.312 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240813 172436.312 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240813 172436.312 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240813 172436.312 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240813 172436.312 INFO             PET0 Running with ESMF Version   : 8.6.1
+20240813 172436.312 INFO             PET0 ESMF library build date/time: "Aug 13 2024" "17:07:15"
+20240813 172436.312 INFO             PET0 ESMF library build location : /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.1
+20240813 172436.312 INFO             PET0 ESMF_COMM                   : openmpi
+20240813 172436.312 INFO             PET0 ESMF_MOAB                   : enabled
+20240813 172436.312 INFO             PET0 ESMF_LAPACK                 : enabled
+20240813 172436.312 INFO             PET0 ESMF_NETCDF                 : enabled
+20240813 172436.312 INFO             PET0 ESMF_PNETCDF                : enabled
+20240813 172436.312 INFO             PET0 ESMF_PIO                    : enabled
+20240813 172436.312 INFO             PET0 ESMF_YAMLCPP                : enabled
+20240813 172436.404 ERROR            PET0 /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.1/src/Infrastructure/IO/interface/ESMC_IOScrip2ESMF.C:50 handle_error Internal error: Bad condition  - line 484: NetCDF error: No such file or directory
+20240813 172436.404 ERROR            PET0 /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.1/src/Infrastructure/IO/interface/ESMC_IOScrip2ESMF.C:50 handle_error Internal error: Bad condition  - line 501: NetCDF error: NetCDF: Not a valid ID
+20240813 172436.404 ERROR            PET0 /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.1/src/Infrastructure/IO/interface/ESMC_IOScrip2ESMF.C:50 handle_error Internal error: Bad condition  - line 503: NetCDF error: NetCDF: Not a valid ID
+20240813 172436.404 ERROR            PET0 /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.1/src/Infrastructure/IO/interface/ESMC_IOScrip2ESMF.C:50 handle_error Internal error: Bad condition  - line 505: NetCDF error: NetCDF: Not a valid ID
+20240813 172436.404 ERROR            PET0 /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.1/src/Infrastructure/IO/interface/ESMC_IOScrip2ESMF.C:50 handle_error Internal error: Bad condition  - line 509: NetCDF error: NetCDF: Not a valid ID
+20240813 172436.404 ERROR            PET0 /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.1/src/Infrastructure/IO/interface/ESMC_IOScrip2ESMF.C:50 handle_error Internal error: Bad condition  - line 511: NetCDF error: NetCDF: Not a valid ID
+20240813 172436.404 ERROR            PET0 /mnt/iusers01/fatpou01/sees01/a16404ys/privatemodules_packages/csf3/apps/gcc/esmf/build/esmf-8.6.1/src/Infrastructure/IO/interface/ESMC_IOScrip2ESMF.C:50 handle_error Internal error: Bad condition  - line 513: NetCDF error: NetCDF: Not a valid ID
+20240813 172436.404 INFO             PET0  Finalizing ESMF

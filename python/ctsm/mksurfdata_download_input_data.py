@@ -40,7 +40,8 @@ def download_input_data(rundir):
     """
     _create_input_data_list(rundir)
     # TODO Remove hardwiring
-    case = Case(os.path.realpath("/home/slevis/cases_FATES/CZ2_acf_off"))
+    # case = Case(os.path.realpath("/home/slevis/cases_FATES/CZ2_acf_off"))
+    case = Case(os.path.realpath("/mnt/iusers01/fatpou01/sees01/a16404ys/scratch/Projects/scratch/0project4/test"))
     case.check_all_input_data(data_list_dir=rundir, download=True, chksum=False)
     os.remove(os.path.join(rundir, ".input_data_list"))
 

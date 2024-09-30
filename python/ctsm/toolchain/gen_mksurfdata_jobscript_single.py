@@ -33,7 +33,7 @@ def base_get_parser(default_js_name="mksurfdata_jobscript_single.sh"):
 
     parser.print_usage = parser.print_help
     add_logging_args(parser)
-
+    
     parser.add_argument(
         "--account",
         help="""account number (default: %(default)s)""",
@@ -42,6 +42,7 @@ def base_get_parser(default_js_name="mksurfdata_jobscript_single.sh"):
         required=False,
         default="P93300641",
     )
+    
     parser.add_argument(
         "--number-of-nodes",
         help="""number of derecho nodes requested (required)""",
@@ -50,6 +51,7 @@ def base_get_parser(default_js_name="mksurfdata_jobscript_single.sh"):
         type=int,
         required=True,
     )
+    
     parser.add_argument(
         "--bld-path",
         help="""Path to build directory for mksurfdata_esmf""",
@@ -57,6 +59,7 @@ def base_get_parser(default_js_name="mksurfdata_jobscript_single.sh"):
         dest="bld_path",
         default=os.path.join(path_to_ctsm_root(), "tools", "mksurfdata_esmf", "tool_bld"),
     )
+    
     parser.add_argument(
         "--tasks-per-node",
         help="""number of mpi tasks per node for derecho requested (required)""",
@@ -66,6 +69,7 @@ def base_get_parser(default_js_name="mksurfdata_jobscript_single.sh"):
         required=False,
         default="128",
     )
+
     parser.add_argument(
         "--machine",
         help="""currently this recognizes derecho, casper, izumi (default
@@ -75,7 +79,7 @@ def base_get_parser(default_js_name="mksurfdata_jobscript_single.sh"):
         action="store",
         dest="machine",
         required=False,
-        choices=["derecho", "casper", "izumi"],
+        choices=["derecho", "casper", "izumi", "csf3"],
         default="derecho",
     )
     parser.add_argument(
@@ -137,7 +141,6 @@ def check_parser_args(args):
             + ") does NOT exist in the bld-path, aborting"
         )
 
-
 def write_runscript_part1(
     number_of_nodes,
     tasks_per_node,
@@ -151,14 +154,13 @@ def write_runscript_part1(
     """
     Write run script (part 1) Batch headers
     """
-    runfile.write("#!/bin/bash\n")
-    runfile.write("# Edit the batch directives for your batch system\n")
-    runfile.write(f"# Below are default batch directives for {machine}\n")
-    runfile.write(f"#PBS -N {name}\n")
-    runfile.write("#PBS -j oe\n")
-    runfile.write("#PBS -k eod\n")
-
-    runfile.write("#PBS -S /bin/bash\n")
+    runfile.write("#!/bin/bash --login\n")
+    #runfile.write("# Edit the batch directives for your batch system\n")
+    #runfile.write(f"# Below are default batch directives for {machine}\n")
+    #runfile.write(f"#PBS -N {name}\n")
+    #runfile.write("#PBS -j oe\n")
+    #runfile.write("#PBS -k eod\n")
+    #runfile.write("#PBS -S /bin/bash\n")
     if machine == "derecho":
         attribs = {"mpilib": "default"}
         runfile.write(f"#PBS -l walltime={walltime}\n")
@@ -188,7 +190,17 @@ def write_runscript_part1(
         tool_path = os.path.dirname(os.path.abspath(__file__))
         runfile.write("\n")
         runfile.write(f"cd {tool_path}\n")
-
+    elif machine =="csf3":
+        attribs = {"mpilib": "openmpi"}
+        ncpus=128
+        runfile.write(f"#$ -cwd\n")
+        runfile.write(f"#$ -P hpc-zz-aerosol\n")
+        runfile.write(f"#$ -pe hpc.pe 128\n")
+        runfile.write(f"# cd /mnt/iusers01/fatpou01/sees01/a16404ys/CESM/jobscript/project2/\n")
+        runfile.write(f"# qsub mksurfdata_jobscript_single.sh\n")
+        runfile.write(f"# ref: https://ri.itservices.manchester.ac.uk/csf3/\n")
+        runfile.write(f"export OMP_NUM_THREADS=$NSLOTS\n")
+        runfile.write(f"cd /mnt/iusers01/fatpou01/sees01/a16404ys/CESM/my_cesm_sandbox_ctsm5.2/tools/mksurfdata_esmf\n")
     runfile.write("\n")
     runfile.write(
         f"# This is a batch script to run a set of resolutions for mksurfdata_esmf {descrip}\n"

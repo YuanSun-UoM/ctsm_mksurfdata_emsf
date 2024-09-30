@@ -1,0 +1,7 @@
+/mnt/iusers01/fatpou01/sees01/a16404ys/CESM/my_cesm_sandbox_ctsm5.2/tools/mksurfdata_esmf/tool_bld/CMakeFiles/mksurfdata.dir
+/mnt/iusers01/fatpou01/sees01/a16404ys/CESM/my_cesm_sandbox_ctsm5.2/tools/mksurfdata_esmf/tool_bld/CMakeFiles/edit_cache.dir
+/mnt/iusers01/fatpou01/sees01/a16404ys/CESM/my_cesm_sandbox_ctsm5.2/tools/mksurfdata_esmf/tool_bld/CMakeFiles/rebuild_cache.dir
+/mnt/iusers01/fatpou01/sees01/a16404ys/CESM/my_cesm_sandbox_ctsm5.2/tools/mksurfdata_esmf/tool_bld/CMakeFiles/list_install_components.dir
+/mnt/iusers01/fatpou01/sees01/a16404ys/CESM/my_cesm_sandbox_ctsm5.2/tools/mksurfdata_esmf/tool_bld/CMakeFiles/install.dir
+/mnt/iusers01/fatpou01/sees01/a16404ys/CESM/my_cesm_sandbox_ctsm5.2/tools/mksurfdata_esmf/tool_bld/CMakeFiles/install/local.dir
+/mnt/iusers01/fatpou01/sees01/a16404ys/CESM/my_cesm_sandbox_ctsm5.2/tools/mksurfdata_esmf/tool_bld/CMakeFiles/install/strip.dir

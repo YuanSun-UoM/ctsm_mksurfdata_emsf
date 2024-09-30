@@ -1,0 +1,2 @@
+VALUE OF pio_iotype WRITTEN BY gen_mksurfdata_build AND USED BY mksurfdata (i.e. THE FORTRAN EXECUTABLE):
+2
